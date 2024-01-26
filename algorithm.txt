@@ -1,0 +1,13 @@
+1. Iterate attributes
+    1a. Iterate attribute values (ex. tenant names)
+        1ai. Redefine the sum of values by that attribute value
+        using A = y/(1-y)*B where
+        A is the sum of values for that attribute assignment
+        B is the sum of values for the other attribute assignments
+        y is the percentage limit (as a float)
+    1b. Repeat 1a until nothing changes
+    1c. Now we have a new total for each attribute value, so
+        change the propertys with that attribute assignment
+        by adjusting the dollar value weighted by the value of
+        each property
+2. Repeat 1. until all percentages are valid
